@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MyBook-Library",
-    "slug": "MyBook-Library",
+    "name": "Mybook-Library",
+    "slug": "Mybook-Library",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
