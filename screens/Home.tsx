@@ -1,16 +1,17 @@
 import React from 'react';
 import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // Replace this with your actual image path
 // const defaultImage = require('../assets/default-book-cover.png');
 
 const BOOKS = [
   { id: '1', title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', image: require('../assets/facebook.png') },
-  { id: '2', title: 'To Kill a Mockingbird', author: 'Harper Lee', image: require('../assets/facebook.png') },
-  { id: '3', title: '1984', author: 'George Orwell', image: require('../assets/facebook.png') },
-  { id: '4', title: 'Pride and Prejudice', author: 'Jane Austen', image: require('../assets/facebook.png') },
-  { id: '5', title: 'The Catcher in the Rye', author: 'J.D. Salinger', image: require('../assets/facebook.png') },
-  { id: '6', title: 'Moby-Dick', author: 'Herman Melville', image: require('../assets/facebook.png') },
+  // { id: '2', title: 'To Kill a Mockingbird', author: 'Harper Lee', image: require('../assets/facebook.png') },
+  // { id: '3', title: '1984', author: 'George Orwell', image: require('../assets/facebook.png') },
+  // { id: '4', title: 'Pride and Prejudice', author: 'Jane Austen', image: require('../assets/facebook.png') },
+  // { id: '5', title: 'The Catcher in the Rye', author: 'J.D. Salinger', image: require('../assets/facebook.png') },
+  // { id: '6', title: 'Moby-Dick', author: 'Herman Melville', image: require('../assets/facebook.png') },
   // Add more books as needed
 ];
 
@@ -33,7 +34,7 @@ export default function HomeScreen() {
   );
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.headerText}>Books</Text>
       <FlatList
         data={BOOKS}
@@ -42,7 +43,7 @@ export default function HomeScreen() {
         numColumns={3}
         columnWrapperStyle={styles.row}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 
